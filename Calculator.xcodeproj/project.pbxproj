@@ -13,6 +13,7 @@
 		7B350DF9270E63B400CCF7CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B350DF7270E63B400CCF7CF /* Main.storyboard */; };
 		7B350DFB270E63B500CCF7CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B350DFA270E63B500CCF7CF /* Assets.xcassets */; };
 		7B350DFE270E63B500CCF7CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B350DFC270E63B500CCF7CF /* LaunchScreen.storyboard */; };
+		7B350E06270F0A7A00CCF7CF /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B350E05270F0A7A00CCF7CF /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		7B350DFA270E63B500CCF7CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B350DFD270E63B500CCF7CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B350DFF270E63B500CCF7CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B350E05270F0A7A00CCF7CF /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				7B350DF1270E63B400CCF7CF /* AppDelegate.swift */,
 				7B350DF3270E63B400CCF7CF /* SceneDelegate.swift */,
 				7B350DF5270E63B400CCF7CF /* ViewController.swift */,
+				7B350E05270F0A7A00CCF7CF /* CalculatorBrain.swift */,
 				7B350DF7270E63B400CCF7CF /* Main.storyboard */,
 				7B350DFA270E63B500CCF7CF /* Assets.xcassets */,
 				7B350DFC270E63B500CCF7CF /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				7B350DF6270E63B400CCF7CF /* ViewController.swift in Sources */,
 				7B350DF2270E63B400CCF7CF /* AppDelegate.swift in Sources */,
+				7B350E06270F0A7A00CCF7CF /* CalculatorBrain.swift in Sources */,
 				7B350DF4270E63B400CCF7CF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
