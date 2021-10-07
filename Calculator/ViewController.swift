@@ -9,11 +9,42 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var display: UILabel!
+    
+    var userIsInTheMiddleOfTyping: Bool = false
+    
+    @IBAction func touchDigit(_ sender: UIButton) {
+        let digit = sender.titleLabel!.text!
+        if userIsInTheMiddleOfTyping {
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + digit
+        } else {
+            display.text = digit
+        }
+        userIsInTheMiddleOfTyping = true
     }
-
-
+    
+    var displayValue: Double {
+        get {
+            return Double(display.text!)!
+        }
+        set {
+            display.text = String(newValue)
+        }
+    }
+    
+    @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathematicalSymbol = sender.titleLabel!.text {
+            if mathematicalSymbol == "π" {
+                displayValue = M_PI
+            } else if mathematicalSymbol == "√" {
+                displayValue = sqrt(displayValue)
+            }
+        }
+        
+        
+    }
+    
 }
 
