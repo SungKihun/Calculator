@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7B350DEE270E63B400CCF7CF /* Calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B350DEE270E63B400CCF7CF /* 심플칼.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "심플칼.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B350DF1270E63B400CCF7CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B350DF3270E63B400CCF7CF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7B350DF5270E63B400CCF7CF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		7B350DEF270E63B400CCF7CF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B350DEE270E63B400CCF7CF /* Calculator.app */,
+				7B350DEE270E63B400CCF7CF /* 심플칼.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,7 +87,7 @@
 			);
 			name = Calculator;
 			productName = Calculator;
-			productReference = 7B350DEE270E63B400CCF7CF /* Calculator.app */;
+			productReference = 7B350DEE270E63B400CCF7CF /* 심플칼.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 7B350DE9270E63B400CCF7CF /* Build configuration list for PBXProject "Calculator" */;
+			buildConfigurationList = 7B350DE9270E63B400CCF7CF /* Build configuration list for PBXProject "SimpleCal" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -292,22 +292,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 46ZSHLBGKW;
+				CURRENT_PROJECT_VERSION = 1.1.6;
+				DEVELOPMENT_TEAM = Q7GAMSRDQJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "심플칼";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SungKihun.Calculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kr.Sung-Kihun.Utility.Calculator";
+				PRODUCT_NAME = "심플칼";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,22 +322,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 46ZSHLBGKW;
+				CURRENT_PROJECT_VERSION = 1.1.6;
+				DEVELOPMENT_TEAM = Q7GAMSRDQJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Calculator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "심플칼";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.SungKihun.Calculator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				MARKETING_VERSION = 1.1.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "co.kr.Sung-Kihun.Utility.Calculator";
+				PRODUCT_NAME = "심플칼";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -345,7 +349,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B350DE9270E63B400CCF7CF /* Build configuration list for PBXProject "Calculator" */ = {
+		7B350DE9270E63B400CCF7CF /* Build configuration list for PBXProject "SimpleCal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B350E00270E63B500CCF7CF /* Debug */,
