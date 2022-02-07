@@ -17,16 +17,60 @@ class ViewController: UIViewController {
         let digit = sender.titleLabel!.text!
         if userIsInTheMiddleOfTyping {
             let textCurrentlyInDisplay = display.text!
-            display.text = textCurrentlyInDisplay + digit
+            display.text = zeroFilter(num: textCurrentlyInDisplay + digit)
         } else {
             display.text = digit
         }
         userIsInTheMiddleOfTyping = true
     }
     
+    func zeroFilter(num: String) -> String{
+        
+        if num.first == "0" {
+            
+            let numSecondIndex = num.index(num.startIndex, offsetBy: 1)
+            
+            if num[numSecondIndex] == "0" {
+                return "0"
+            } else if num[numSecondIndex] != "0" && num[numSecondIndex] != "." {
+                var numString = num
+                numString.removeFirst()
+                
+                return numString
+            } else {
+                return num
+            }
+        } else {
+            return num
+        }
+    }
+    
     var displayValue: Double {
         get {
             return Double(display.text!)!
+        }
+        set {
+            display.text = removePoint(num: newValue)
+        }
+    }
+    
+    func removePoint(num: Double) -> String {
+        var floatNumString = String(num)
+        
+        while floatNumString.last == "0" {
+            floatNumString.removeLast()
+        }
+        
+        if floatNumString.last == "."{
+            floatNumString.removeLast()
+        }
+        
+        return floatNumString
+    }
+    
+    var displayValueInteger: Int {
+        get {
+            return Int(display.text!)!
         }
         set {
             display.text = String(newValue)
